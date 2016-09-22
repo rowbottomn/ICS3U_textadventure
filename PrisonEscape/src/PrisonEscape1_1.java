@@ -29,11 +29,23 @@ public class PrisonEscape1_1 {
 		Scanner s = new Scanner(System.in);
 		
 		//while (state < 3)
+		
 			//switch (state)
 				//print loccation text
 			//if elseif (booleans)
 				//list commands
 			//get input
+			//if elseif (booleans)
+				//change states and booleans
+			//else 
+				//print "I can do that!"
+		//if state == 3
+			//print "you got nabbed!"
+		//else if state == 4
+			//print "you won!"
+		//else
+			//"What went wrong?"
+				
 			
 		
 		
