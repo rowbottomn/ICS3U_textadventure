@@ -31,9 +31,10 @@ public class PrisonEscape1_1 {
 		//while (state < 3)
 		
 			//switch (state)
-				//print loccation text
-			//if elseif (booleans)
-				//list commands
+				//case 0,1, 2
+					//print location text
+					//if elseif (booleans)
+						//list commands
 			//get input
 			//if elseif (booleans)
 				//change states and booleans

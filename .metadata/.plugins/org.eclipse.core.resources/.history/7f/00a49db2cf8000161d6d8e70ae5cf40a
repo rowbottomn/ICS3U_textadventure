@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+/**
+ * Program is a classic text based adventure game.
+ * Version 1_0 : Use of booleans and a switch statement
+ * Version 2_0 : Input handling
+ * Version 3_0 : optimization
+ * 
+ */
+
+/**
+ * @author rowbottomn
+ *
+ */
+public class PrisonEscape1_2 {
+
+
+
+	/**
+	 * 
+	 */
+	
+	//booleans
+	static boolean paperClipBent = false, doorUnlocked = false, paperClip = false, cellUnlocked = false, guardKnockedOut = false, guardClothesOn = false, idBadge = false;
+	
+	static int location = 0; //0 cell, 1 hall, 2 stairs, 3 lose, 4 win
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		
+		//while (location < 3)
+		while (location < 3){
+			//switch (location)
+			switch (location){
+				//print location text
+				case 0: 
+					System.out.println("In cell");
+					if (paperClip == false){
+						System.out.println("u can get a paper clip");
+					
+					}
+					break;
+				case 1:	
+					System.out.println("In hall");
+					break;
+				case 2:	
+					System.out.println("In stairway");
+					break;
+				
+			//if elseif (booleans)
+
+				//list commands
+			//get input
+			//if elseif (booleans)
+				//change locations and booleans
+			//else 
+				//print "I can do that!"
+		//if location == 3
+			//print "you got nabbed!"
+		//else if location == 4
+			//print "you won!"
+		//else
+			//"What went wrong?"
+				
+			
+		
+		
+		
+	}
+
+}
