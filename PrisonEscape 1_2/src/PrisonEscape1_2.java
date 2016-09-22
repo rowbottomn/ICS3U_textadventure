@@ -40,16 +40,18 @@ public class PrisonEscape1_2 {
 					if (paperClip == false){
 						System.out.println("u can get a paper clip");
 					}
-					if (cellUnlocked ==false){
+					if (cellUnlocked == false){
 						System.out.println("u can see a mirror");
 					}
 					else if (cellUnlocked == false && paperClip ==false){
-						System.out.println("u can see an attractive person");
+						System.out.println("u can see an attractive person, oh wait that\'s a mirror");
 					}
 					else if (cellUnlocked == false && paperClipBent ==false){
 						System.out.println("u might be able to use the mirror to open the lock outside the cell if you had the right tool");
 					}
-					
+					else {
+						System.out.println("Why are you still hanging around here? Escape already!");
+					}
 					break;
 				case 1:	
 					System.out.println("In hall");
@@ -67,18 +69,36 @@ public class PrisonEscape1_2 {
 			switch (location){
 			//print location text
 			case 0: 
+				//possible actions in cell: get clip, bent clip, drop clip, unlock door, look mirror, look guard, hit guard, hall
 				if (input.contains("clip")){
-					System.out.println("u got a paper clip");
-					paperClip = true;
+					if (input.contains("get")){
+						if (paperClip==false){
+							System.out.println("u got a paper clip");
+							paperClip = true;
+						}
+						else {
+							System.out.println("u already got a paper clip");	
+						}
+					}
+					else if (input.contains("bend")){
+						if (paperClipBent==false){
+							System.out.println("u bent the paper clip into a perfect shape for picking a lock");
+							paperClip = true;
+						}
+						else {
+							System.out.println("u already bent the paper clip, try looking for a way to see the look on the door!");
+						}
+					}
 				}
-				if ((input.contains("unlock")) && (paperClipBent == true)){
+				else if ((input.contains("unlock")) && (paperClipBent == true)){
 					System.out.println("u use the mirrorand the bent paper clip to pick the cell lock");
 					cellUnlocked = true;
 				}
-				if (cellUnlocked == false && paperClip ==false){
+				
+				if ((input.contains("mirror")) && paperClip ==false){
 					System.out.println("u can see an attractive person");
 				}
-				else if (cellUnlocked == false && paperClipBent ==false){
+				if (cellUnlocked == false && paperClipBent ==false){
 					System.out.println("u might be able to use the mirror to open the lock outside the cell if you had the right tool");
 				}
 				
