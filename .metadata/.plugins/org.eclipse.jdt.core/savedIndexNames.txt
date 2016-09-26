@@ -1,2 +1,21 @@
 INDEX VERSION 1.127+G:\git\ICS3U_textadventure\.metadata\.plugins\org.eclipse.jdt.core
+3299422388.index
+1073190104.index
+2050908165.index
+4067068589.index
+2741581864.index
+2355066768.index
+3024903679.index
+2799350720.index
+51915478.index
+4042793792.index
+4164139556.index
+262141639.index
+3400675815.index
+4143041746.index
 3845521115.index
+507044819.index
+2032977337.index
+363248586.index
+1921434313.index
+1630659722.index

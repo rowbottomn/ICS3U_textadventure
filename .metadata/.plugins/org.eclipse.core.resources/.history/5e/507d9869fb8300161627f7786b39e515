@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 /**
  * Program is a classic text based adventure game.
- * Version 1_0 : Use of booleans and switch statements
+ * Version 1_0 : Use of booleans and a switch statement
+ * Version 2_0 : Input handling
+ * Version 3_0 : optimization
  * 
  */
 
@@ -12,6 +14,8 @@ import java.util.Scanner;
  */
 public class PrisonEscape1_1 {
 
+
+	//booleans
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -63,9 +67,9 @@ public class PrisonEscape1_1 {
 						}
 					}
 					else if (input.contains("blue")){
-						if (blueDoorClosed){
+						if (redDoorClosed){
 							System.out.println("you opened the blue door");
-							blueDoorClosed = false;
+							redDoorClosed = false;
 						}
 						else {
 							System.out.println("the blue door is already opened!");
@@ -96,9 +100,6 @@ public class PrisonEscape1_1 {
 						System.out.println("Which door are you trying to enter?");
 					}
 				}
-				else {
-					System.out.println("What are you talking about?!");
-				}
 				break;
 			case 1: // hall from red door
 				//enter exit or red door
@@ -111,9 +112,6 @@ public class PrisonEscape1_1 {
 						System.out.println("you enter the exit and find yourself outside");
 						location = 4;
 					}
-				}
-				else {
-					System.out.println("What are you talking about?!");
 				}
 				break;
 			case 2: //stairs from blue door
@@ -128,9 +126,6 @@ public class PrisonEscape1_1 {
 						location = 3;
 					}
 				}
-				else {
-					System.out.println("What are you talking about?!");
-				}
 				break;
 			}
 
@@ -142,6 +137,24 @@ public class PrisonEscape1_1 {
 		else if (location ==4){
 			System.out.println("You won on the easiest level, try a harder level you slacker!");
 		}
+		//switch (location)
+		//case 0,1, 2
+		//print location text
+		//if elseif (booleans)
+		//list commands
+		//get input
+		//switch (location)
+		//if elseif (keywords)
+		//change states and booleans
+		//else 
+		//print "I can't do that!"
+
+		//if state == 3
+		//print "you got nabbed!"
+		//else if state == 4
+		//print "you won!"
+		//else
+		//"What went wrong?"
 
 
 
